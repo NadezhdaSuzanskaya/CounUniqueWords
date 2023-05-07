@@ -31,7 +31,7 @@ public class WorkWithText {
         LOGGER.info("textWithoutPunctuationMarks:" + textWithoutPunctuationMarks);
         return textWithoutPunctuationMarks;
     }
-    
+
     public String getcountUniqueWords(String text) {
         String[] words2 = StringUtils.split(gettextWithoutPunctuationMarks(text), " ");
         String counOfWords;
