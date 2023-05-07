@@ -1,0 +1,4 @@
+Count of unique words:
+ 14
+ Unique words: 
+[during, a, debugging, session, you, launch, your, program, with, the, debugger, attached, to, it]
