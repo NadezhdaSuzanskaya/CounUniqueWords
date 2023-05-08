@@ -9,3 +9,4 @@ Done:
  - converted the text to lowercase
  - calculated unique words
  - wrote the count of unigue words and the array of the unique words to the second file
+ - used logging to console and try-catch

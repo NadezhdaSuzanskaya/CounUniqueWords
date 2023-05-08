@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.Arrays;
@@ -33,18 +34,18 @@ public class WorkWithText {
     }
 
     public String getcountUniqueWords(String text) {
-        String[] words2 = StringUtils.split(gettextWithoutPunctuationMarks(text), " ");
+        String[] wordFromText = StringUtils.split(gettextWithoutPunctuationMarks(text), " ");
         String counOfWords;
-        counOfWords = String.valueOf(Arrays.stream(words2).distinct().count());
+        counOfWords = String.valueOf(Arrays.stream(wordFromText).distinct().count());
         LOGGER.info("counOfWords:" + counOfWords);
         return counOfWords;
     }
 
     public String getArrayOfUniqueWords(String text) {
-        String[] words2 = StringUtils.split(gettextWithoutPunctuationMarks(text), " ");
+        String[] wordFromText = StringUtils.split(gettextWithoutPunctuationMarks(text), " ");
         String arrayOfWords;
-        arrayOfWords = String.valueOf(Arrays.stream(words2).distinct().toList());
-        LOGGER.info("WORDS2 []:" + Arrays.stream(words2).distinct().toList());
+        arrayOfWords = String.valueOf(Arrays.stream(wordFromText).distinct().toList());
+        LOGGER.info("WORDS []:" + arrayOfWords);
         return arrayOfWords;
     }
 
